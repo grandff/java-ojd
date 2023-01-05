@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Bold';
+    src: url("../font/SpoqaHanSansNeo-Bold.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Medium';
+    src: url("../font/SpoqaHanSansNeo-Medium.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Regular';
+    src: url("../font/SpoqaHanSansNeo-Regular.ttf") format('truetype');
+}
+
+h1,h2, button, th, h4 {
+    font-family: 'Bold' , 'sans-serif';    
+}
+
+p, a, td, label, input {
+    font-family: 'Regular', 'sans-serif';
+}
