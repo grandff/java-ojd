@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringSampleApplication<spring-sample>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "kdn.spring.sample.springsample.SpringSampleApplication",
+            "projectName": "spring-sample",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<!-- thymeleaf 설정 -->
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" 
+xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+    <!-- 공통 헤드 -->
+    <th:block th:replace = "layout/fragments/header :: headFragment"></th:block>
+    <body>
+        <!-- 네비게이션 -->
+        <th:block th:replace = "layout/fragments/nav :: navFragment"></th:block>
+
+        <div id="wrapper">
+        <!-- 내용 영역-->
+        <div class="container">
+            <th:block layout:fragment="content"></th:block>
+        </div>
+    </div>
+        <!-- 공통 푸터 -->
+        <th:block th:replace = "layout/fragments/footer :: footerFragment"></th:block>
+    </body>
+</html>
