@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"  pageEncoding="UTF-8"%>
 <%    
-    String nowBoardCount = String.valueOf(session.getAttribute("count")).replaceAll("null", "0");   // 현재 게시글 갯수
+    String nowBoardCount = String.valueOf(session.getAttribute("totalCount")).replaceAll("null", "0");   // 현재 게시글 갯수
     String nowUrl = request.getRequestURL().toString();
     boolean mainFlag = nowUrl.indexOf("main.jsp") > -1 ? true : false;  // 현재 메인화면 여부
 %>

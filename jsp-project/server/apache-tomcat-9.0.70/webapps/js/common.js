@@ -42,3 +42,6 @@ const goToList = () => {
 
 
 // 상세화면 이동
+const goToDetail = (num) => {
+    location.href = `/web/board/view.jsp?num=${num}`;
+}

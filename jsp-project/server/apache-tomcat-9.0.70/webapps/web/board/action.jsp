@@ -8,9 +8,11 @@ import="java.util.*"
     ArrayList<HashMap<String,String>> boardList  = new ArrayList<HashMap<String,String>>();    
     boolean successFlag = true;
     try{
-        boardList  = (ArrayList) session.getAttribute("list");        
+        boardList  = (ArrayList) session.getAttribute("list");   
+        System.out.println(boardList.size());
     }catch(Exception e){        
         boardList = new ArrayList<HashMap<String,String>>();        
+        System.out.println(boardList.size());
     }    
 
     try{

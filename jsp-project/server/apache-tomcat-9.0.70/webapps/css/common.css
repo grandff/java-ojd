@@ -20,3 +20,8 @@ h1,h2, button, th, h4 {
 p, a, td, label, input {
     font-family: 'Regular', 'sans-serif';
 }
+
+a {
+    text-decoration: none !important;
+    color : black;
+}

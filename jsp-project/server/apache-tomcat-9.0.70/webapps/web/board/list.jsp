@@ -31,7 +31,7 @@
             %>
                 <tr>
                     <td><%=board.get("num")%></td>
-                    <td><%=board.get("title")%></td>
+                    <td><a href="#" onclick="goToDetail(<%=board.get("num")%>)"><%=board.get("title")%></a></td>
                 </tr>                            
             <%
                 }
