@@ -6,6 +6,5 @@ import org.springframework.web.servlet.ModelAndView;
 public interface ControllerInterface {
     ModelAndView list();
     ModelAndView view();
-    ModelAndView form();
-    String action();
+    ModelAndView form(String mode);
 }

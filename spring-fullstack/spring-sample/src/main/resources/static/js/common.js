@@ -1,6 +1,6 @@
 // 등록화면 이동
 const goToForm = () => {
-    location.href = "/web/board/form.jsp";
+    location.href = "/board/form";
 }
 
 // validation
@@ -30,8 +30,29 @@ const insertBoard = () => {
 
         return false;
     }else{  // action page로 submit
-        const formObj = document.querySelector("form"); // form 정보를 가져와서
-        formObj.submit(); // submit 처리
+        // json 전송을 위해 fetch api call
+        let jsonData = {
+            ttl : document.querySelector("input[name=title]").value,
+            ctt : document.querySelector("textarea[name=ctt]").value,
+            pwd : document.querySelector("input[name=pwd]").value,
+        }        
+
+        let sendData = {
+            method : "POST",
+            body : JSON.stringify(jsonData),
+            headers : {                
+                'Content-Type': 'application/json'
+            }
+        }
+
+        fetch('/board/action', sendData)    
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);                
+            })
+            .catch(error => {
+                console.log(error);
+            })
     }
 }
 

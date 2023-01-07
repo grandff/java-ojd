@@ -23,5 +23,15 @@ public class ExampleRepository implements RepositoryInterface{
         return resultList;
     }
 
+    // 등록하기
+    @Override
+    public int insert(Example requestDto) {
+        // TODO Auto-generated method stub
+
+
+
+        return 0;
+    }
+
 
 }
