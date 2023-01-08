@@ -23,7 +23,24 @@ public class ExampleService {
     // 게시글 등록/수정 처리
     public int insertUpdateDeleteForm(String mode, Example requestDto){
         int result = 0;
-        if(mode.equals("insert")) result = exampleRepository.insert(requestDto);        
+        if(mode.equals("insert")) result = exampleRepository.insert(requestDto);
+        else if(mode.equals("update")) result = exampleRepository.update(requestDto);
+        else result = -1;   // 올바른 값이 아님
         return result;
+    }
+
+    // 게시글 조회
+    public Example detail(int seq){
+        return exampleRepository.detail(seq);
+    }
+
+    // 게시글 삭제
+    public int delete(int seq){
+        return exampleRepository.delete(seq);
+    }
+
+    // 게시글 갯수 조회
+    public int count(){
+        return exampleRepository.count();
     }
 }

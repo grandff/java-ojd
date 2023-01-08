@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout/layout}">
+
+<th:block layout:fragment="content">
+    <div id="updateModeArea" class="my-5">
+        <h2>게시판</h2>
+        <p>게시글 상세조회</p>
+        <input type="hidden" name="mode" value="view" />
+        <div class="mb-3 mt-3">
+            <label for="num" class="form-label">게시글 번호</label>
+            <input type="text" class="form-control" id="num" name="num" readonly th:value="${data.seq}">
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="regDate" class="form-label">등록일자</label>
+            <input type="text" class="form-control" id="regDate" name="regDate" readonly th:value="${data.regDate}">
+        </div>
+        <div class="mb-3">
+            <label for="title" class="form-label">제목</label>
+            <input type="text" class="form-control" id="title" name="title" readonly th:value="${data.ttl}">
+        </div>  
+        <div class="mb-3">
+            <label for="pwd" class="form-label">내용</label>
+            <textarea class="form-control" rows="5" id="ctt" name="ctt" readonly th:text="${data.ctt}"></textarea>                     
+        </div>  
+        <div class="d-flex justify-content-end">
+            <button type="button" id="updateBtn" class="btn btn-primary" onclick="changeUpdateForm();">편집</button>            
+            <button type="button" id="updateOnBtn"  class="btn btn-success d-none ms-1" onclick="updateBoard();">수정</button>
+            <button type="button" id="updateCancelBtn" class="btn btn-dark d-none ms-1" onclick="changeUpdateForm();">취소</button>
+            <button type="button" class="btn btn-danger ms-1" onclick="deleteBoard()">삭제</button>
+            <button type="button" class="btn btn-secondary ms-1" onclick="goToList()">목록</button>
+        </div>
+    </div> 
+    <button id="modalToggleBtn" type="button" class="invisible btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">    
+    </button>
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+    
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">등록 실패</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+    
+            <!-- Modal body -->
+            <div class="modal-body">
+                필수값을 확인해주세요.
+            </div>
+    
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>   
+</th:block>
+</html>

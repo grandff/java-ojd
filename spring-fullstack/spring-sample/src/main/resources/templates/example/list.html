@@ -24,9 +24,11 @@
                     <td colspan="2">등록된 게시글이 없습니다.</td>
                 </tr>
                 <!-- 있을 경우에는 아래처럼 목록 제공 -->
-                <tr th:each="board : ${boardList}">
+                <tr th:each="board : ${boardList}" 
+                th:seq = "${board.seq}"
+                th:onclick="goToDetail(this.getAttribute('seq'))">
                     <td th:text="${board.seq}"></td>
-                    <td th:text="${board.ttl"></td>
+                    <td th:text="${board.ttl}"></td>
                 </tr>
             </tbody>
         </table>

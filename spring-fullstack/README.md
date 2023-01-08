@@ -6,9 +6,15 @@ Spring full stack으로 구성된 웹시스템
 
 ## 교육순서
 
+> 1. Spring Framework 동작 원리
+> 2. Controller / Service / Repository / Model 로 나눈 MVC 패턴
+> 3. thymeleaf 기본 사용 방법
+> 4. jsp와 비지니스 로직 구현 방법의 차이
+
 ## 과제목록
 
 [ ] 게시글 임시저장 처리
+[ ] 입력한 패스워드가 일치해야 삭제가 되도록 처리
 [ ] 임시저장 불러오기 기능
 [ ] 임시저장한 글을 등록했을 경우 임시저장 데이터 삭제
 
@@ -34,3 +40,4 @@ Spring full stack으로 구성된 웹시스템
 
 (thymeleaf 문법)<https://catsbi.oopy.io/32a9458e-f452-4733-b87c-caba75f98e2d>
 (thymeleaf 동적처리)<https://recordsoflife.tistory.com/506>
+(thymeleaf 매개변수 넘기기)<https://wangtak.tistory.com/27>

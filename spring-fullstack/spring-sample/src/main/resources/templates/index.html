@@ -30,7 +30,7 @@
             <h1 th:text="${bio}"></h1>  <!-- main controller에서 보낸 model attribute 출력 -->
         </div>
         <div class ="flex mb-5">
-            <h2>현재 당신이 등록한 게시글 수는... 건 입니다. </h2>            
+            <h2>현재 당신이 등록한 게시글 수는... <span th:text="${totalCount}"></span> 건 입니다. </h2>            
         </div>
         <div class="row">
             <div class="col-sm-4">
