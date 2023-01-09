@@ -13,16 +13,16 @@ Spring full stack으로 구성된 웹시스템
 
 ## 과제목록
 
-[ ] 게시글 임시저장 처리
-[ ] 입력한 패스워드가 일치해야 삭제가 되도록 처리
-[ ] 임시저장 불러오기 기능
-[ ] 임시저장한 글을 등록했을 경우 임시저장 데이터 삭제
+[ ] 게시글 임시저장 처리  
+[ ] 입력한 패스워드가 일치해야 삭제가 되도록 처리  
+[ ] 임시저장 불러오기 기능  
+[ ] 임시저장한 글을 등록했을 경우 임시저장 데이터 삭제  
 
 ## 특이사항
 
 1. interface, abstract를 사용한 구조
-2. 기본 뷰엔진은 thymeleaf 사용
-3. h2 database 사용
+2. 뷰엔진은 thymeleaf 사용
+3. h2 database 사용해서 CRUD 구현
 
 ## 기본 기능
 
@@ -33,11 +33,11 @@ Spring full stack으로 구성된 웹시스템
 
 ## 최초 설정 및 구동 방법
 
-> mvnw 실행 해서 maven 파일 설치
+> mvnw 실행 해서 maven 파일 설치  
 > 이후 Spring Boot Dashboard에서 실행 또는 jar파일 실행
 
 ## 참고
 
-(thymeleaf 문법)<https://catsbi.oopy.io/32a9458e-f452-4733-b87c-caba75f98e2d>
-(thymeleaf 동적처리)<https://recordsoflife.tistory.com/506>
-(thymeleaf 매개변수 넘기기)<https://wangtak.tistory.com/27>
+[thymeleaf 문법](https://catsbi.oopy.io/32a9458e-f452-4733-b87c-caba75f98e2d)  
+[thymeleaf 동적처리](https://recordsoflife.tistory.com/506)  
+[thymeleaf 매개변수 넘기기](https://wangtak.tistory.com/27)  
